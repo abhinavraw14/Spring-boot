@@ -1,15 +1,15 @@
 package com.telusko;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Hello world!
- *
- */
-public class App 
+public class App
 {
-    public static void main( String[] args )
-    {
-
-        Alien obj = new Alien();
+    public static void main( String[] args ) {
+//        Create a container.
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml"); //This line basically creates a container for you.
+        //Xml based configuration
+        Alien obj = (Alien) context.getBean("alien");
+        obj.code();
 
     }
 }

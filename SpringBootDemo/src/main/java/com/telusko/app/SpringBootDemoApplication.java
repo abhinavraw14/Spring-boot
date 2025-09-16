@@ -16,14 +16,16 @@ public class SpringBootDemoApplication {
 
 //		how spring creates an object/beans
 //		Spring Part
-//		everytime the spring framework creates the object for you it will be
+//		everytime the spring framework creates the object for it will be
 //		available inside the container
 
 		Alien obj = context.getBean(Alien.class);
 		obj.code();
 
-		Alien obj1 = context.getBean(Alien.class);
-		obj1.code();
+//		Laptop lap = context.getBean(Laptop.class);
+//		lap.compile();
+
+
 	}
 
 }
