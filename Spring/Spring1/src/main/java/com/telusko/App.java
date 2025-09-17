@@ -5,10 +5,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App
 {
     public static void main( String[] args ) {
-//        Create a container.
+//        Create a container -> container creates an object inisde it.
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml"); //This line basically creates a container for you.
         //Xml based configuration
-        Alien obj = (Alien) context.getBean("alien");
+        Alien obj = (Alien) context.getBean("alien1"); //getBean(XML id);
         obj.code();
 
     }
