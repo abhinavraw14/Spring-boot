@@ -19,5 +19,21 @@ public class App
 //      even if we have 2 different referencees but the object is same.
         //obj2.code();
 
+        //SCOPES
+        //In Spring Framework, scopes define the lifecycle and visibility of the
+        // objects (beans) managed by the Spring container. By default, Spring beans
+        // are Singleton, but you can change this with @Scope or XML configuration.
+
+        // 1. Singleton (default)
+        //One instance per Spring container.
+        //Every request for that bean returns the same instance.
+        //Best for stateless beans.
+
+        // 2. Prototype
+        //New instance every time it is requested from the container.
+        //Useful for stateful beans.
+        //it creates a object everytime we say getbeans
+
+
     }
 }
