@@ -6,9 +6,7 @@
     <bean id="alien1" class="com.telusko.Alien">
         <!--  beans are basically objects managed by spring frameworks  -->
     </bean>
-    <bean id="alien2" class="com.telusko.Alien">
-        <!--  beans are basically objects managed by spring frameworks  -->
-    </bean>
+
     <bean id="Lap" class="com.telusko.Laptop">
 
     </bean>
