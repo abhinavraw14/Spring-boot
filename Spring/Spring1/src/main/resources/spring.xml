@@ -5,11 +5,15 @@
 
     <bean id="alien1" class="com.telusko.Alien">
 <!--        Constructor Injection-->
-        <constructor-arg type="int" value="21"></constructor-arg>
-        <constructor-arg type="com.telusko.Laptop" ref="lap1"></constructor-arg>
+        <constructor-arg index="0" ref="lap1"></constructor-arg>
+        <constructor-arg index="1" value="21"></constructor-arg>
+<!--        <constructor-arg name="lap"  ref="lap1"></constructor-arg>-->
+<!--        <constructor-arg name="age" value="21"></constructor-arg>-->
+
     </bean>
+
     <bean id="lap1" class="com.telusko.Laptop">
-        <!-- we also need this bean as well to make lap1 object work-->
+                <!-- we also need this bean as well to make lap1 object work-->
     </bean>
     <bean id="lap2" class="com.telusko.Laptop">
         <!-- we also need this bean as well to make lap1 object work-->

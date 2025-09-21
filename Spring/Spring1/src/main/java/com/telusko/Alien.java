@@ -11,6 +11,7 @@ public class Alien {
     public Alien(Laptop lap, int age) {
         this.lap = lap;
         this.age = age;
+//        this.salary = salary;
     }
 
     //    public Alien(int age, ){
