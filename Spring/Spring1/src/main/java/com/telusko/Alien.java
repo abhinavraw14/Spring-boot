@@ -2,6 +2,7 @@ package com.telusko;
 
 public class Alien {
     private int age;
+    private int salary;
     private Laptop lap;
     public Alien(){
         System.out.println("Object Created");
