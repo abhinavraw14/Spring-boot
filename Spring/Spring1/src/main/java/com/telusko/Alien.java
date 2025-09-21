@@ -7,6 +7,16 @@ public class Alien {
         System.out.println("Object Created");
     }
 
+    public Alien(Laptop lap, int age) {
+        this.lap = lap;
+        this.age = age;
+    }
+
+    //    public Alien(int age, ){
+//        System.out.println("parameterised construct called");
+//        this.age = age;
+//    }
+
     public int getAge() {
         return age;
     }

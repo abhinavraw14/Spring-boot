@@ -4,13 +4,15 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="alien1" class="com.telusko.Alien">
-        <!-- Setter Injection -->
-        <property name="age" value="21"></property>
-        <!-- ref attribute is used for object value       -->
-        <property name="lap" ref="lap1"></property>
+<!--        Constructor Injection-->
+        <constructor-arg value="21"></constructor-arg>
+        <constructor-arg ref="lap1"></constructor-arg>
     </bean>
 
     <bean id="lap1" class="com.telusko.Laptop">
+        <!-- we also need this bean as well to make lap1 object work-->
+    </bean>
+    <bean id="lap2" class="com.telusko.Laptop">
         <!-- we also need this bean as well to make lap1 object work-->
     </bean>
 
